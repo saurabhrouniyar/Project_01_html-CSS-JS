@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizZone</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>QuizZone</h1>
+      <p>Sharpen your Web Skills & Have Fun!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="quiz-section card">
+      <h2>🧠 Take the Web Quiz</h2>
+      <div id="quiz">
+        <p id="question">Loading question...</p>
+        <div id="options" class="options-container"></div>
+        <button id="nextBtn" onclick="nextQuestion()">Next Question</button>
+      </div>
+    </section>
+
+    <section class="api-section card">
+      <h2>🎭 Laugh Break - Random Tech Joke</h2>
+      <div class="joke-box">
+        <p id="joke">Click below for a tech joke!</p>
+        <button onclick="fetchJoke()">Tell Me a Joke</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 QuizZone. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
