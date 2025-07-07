@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Saurabh Kumar</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo"> <span>Sau</span>rabh</a>
+
+
+        <nav class="navbar">
+            <a href="#" class="">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Skills</a>
+        </nav>
+
+        <a href="#" class="contact">Contact Us</a>
+    </header>
+
+    <section class="home">
+
+        <div class="img-box">
+            <img src="./my pic 01.jpg" alt="Saurabh's Picture">
+        </div>
+
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1><span>Saurabh Kumar</span></h1>
+
+            <p>
+                I’m a passionate <strong>Front-End Developer</strong> dedicated to designing and building high-quality,
+                user-centric web applications.
+                My work focuses on creating intuitive interfaces and seamless user experiences using HTML, CSS, and
+                JavaScript.
+                I believe in clean design principles, responsive layouts, and efficient performance.
+                Whether it’s building a landing page, portfolio, or a dynamic web feature, I approach every project with
+                creativity, precision, and attention to detail.
+            </p>
+
+            <div class="btn-box">
+                <button class="btn-1">HIRE ME</button>
+                <button class="btn-2">Experience</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+
+        <div class="about-img">
+            <img src="./pic 02.jpg" alt="Saurabh's Picture">
+        </div>
+
+        <div class="about-content">
+
+            <h2 class="heading">About<span> Me</span></h2>
+            <h3>Frontend<span> Developer</span></h3>
+            <p>
+                I'm <strong>Saurabh Kumar</strong>, currently pursuing my <strong>Master’s in Computer Applications
+                    (MCA)</strong> from
+                <strong>KIET Group of Institutions</strong>.
+            </p>
+
+            <a href="#" class="btn-2">Resume</a>
+        </div>
+
+    </section>
+
+
+
+    <section class="todo-section" id="todo">
+        <h2>My To-Do List</h2>
+        <div class="todo-container">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+    </section>
+
+
+    <section class="product-section" id="products">
+        <h2>Product Listings</h2>
+        <div>
+            <label>Filter:</label>
+            <select id="filterCategory" onchange="filterProducts()">
+                <option value="all">All</option>
+                <option value="tech">Tech</option>
+                <option value="clothes">Clothes</option>
+            </select>
+
+            <label>Sort by:</label>
+            <select id="sortPrice" onchange="sortProducts()">
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+
+        <div id="productList" class="product-list"></div>
+    </section>
+
+
+
+
+    <section class="contact-form">
+
+        <h2 class="contact-me">Contact<span> Me</span></h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Mail ID">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Enter Your Mobile Number">
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <textarea name="" id="" cols="25" rows="8" placeholder="Your Message"></textarea>
+
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+
+        <footer class="footer">
+
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <ul class="list">
+
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+
+                <li>
+                    <a href="#">Services</a>
+                </li>
+
+                <li>
+                    <a href="#">About Me</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+
+
+                <p>&copy; BY SAURABH. All right reserved</p>
+
+            </ul>
+        </footer>
+
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
